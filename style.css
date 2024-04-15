@@ -1,0 +1,59 @@
+body {
+  background: linear-gradient(90deg,#ffa9a9,#64a1e0,#ffa9a9,#64a1e0);
+}
+
+.selections {
+  display: flex;
+  justify-content:center;
+}
+h1{
+  background-color: #fcaec7;
+  border-radius: 50%;
+  text-align: center;
+
+}
+
+.selection {
+  background: linear-gradient(#c55d7e,#9769a5);
+  border: 3mm ridge rgb(212, 99, 110);
+  outline: rgb(25, 0, 255);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 200ms;
+
+   margin: 75px;
+   border-radius: 25%;
+ 
+}
+
+.selection:hover {
+  transform: scale(2.25);
+}
+
+.results {
+  margin-top: 1rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  font-family: 'Trebuchet MS', 'Lucida sans Unicode' , 'Lucida Grande' , 'Lucida sans' , Arial , san-serif;
+  font-size: xx-large;
+}
+
+.result-score {
+  margin-left: .1rem;
+  font-size: 1.5rem;
+  color: #333;
+  font-size: xx-large;
+}
+
+.result-selection {
+  opacity: .5;
+}
+
+.result-selection.winner {
+  opacity: 1;
+  font-size: 1.5rem;
+}
